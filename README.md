@@ -1,4 +1,4 @@
-## 🚀 ***Automated Test Cases for Voila.id*** 🚀
+# 🚀 ***Automated Test Cases for Voila.id*** 🚀
 
 ## 📝 **Project Overview** 📝
 This repository contains automated tests for Voila.id, an e-commerce platform offering a wide range of products and boutique services. The goal of this project is to ensure all platform features work smoothly, covering product browsing, user management, checkout, and external redirections.
