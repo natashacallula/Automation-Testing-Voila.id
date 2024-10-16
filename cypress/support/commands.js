@@ -136,7 +136,6 @@ Cypress.Commands.add('AddbyPostal', (Label, Name, Phone, Postal, Detail, Note) =
     cy.get('[data-test-id="CT_Component_SubmitAddress"]').click()
 
     cy.contains('New address has been saved.').should('be.visible')
-
 })
 
 Cypress.Commands.add('AddbySelecting', (Label, Name, Phone, Detail, Note) =>{
@@ -161,8 +160,7 @@ Cypress.Commands.add('AddbySelecting', (Label, Name, Phone, Detail, Note) =>{
 
     cy.get('[data-test-id="CT_Component_SubmitAddress"]').click()
 
-    cy.contains('New address has been saved.').should('be.visible')
-      
+    cy.contains('New address has been saved.').should('be.visible')   
 })
 
 Cypress.Commands.add('navigatescategory', () =>{
@@ -181,7 +179,6 @@ Cypress.Commands.add('navigatescategory', () =>{
 
     cy.get('[data-test-id="CT_first_tier_link_Brands"]').click()
     cy.url().should('include', 'brands')
-
 })
 
 Cypress.Commands.add('detailproduct', () =>{
@@ -195,7 +192,6 @@ Cypress.Commands.add('detailproduct', () =>{
     cy.contains('Read More').scrollIntoView()
     cy.contains('Read More').click()
     cy.contains('Show Less').should('be.visible')
-      
 })
 
 Cypress.Commands.add('sortingproducts', () =>{
@@ -226,7 +222,6 @@ Cypress.Commands.add('sortingproducts', () =>{
     cy.get('[data-test-id="sort-dropdown"]').click()
     cy.get('[role="option"]').contains('Highest Discount').click({ force: true })
     cy.url().should ('include', 'highest_discount&page=1')
-
 })
 
 Cypress.Commands.add('filterproducts', () =>{
@@ -242,7 +237,6 @@ Cypress.Commands.add('filterproducts', () =>{
     cy.wait(2000)
 
     cy.url().should ('include', 'color=white&page=1')
-      
 })
 
 Cypress.Commands.add('brandpagesearch', () =>{
@@ -253,7 +247,6 @@ Cypress.Commands.add('brandpagesearch', () =>{
     cy.get('._15kd2we5s._1ccbe2wb.ellipsis-one-line._10d0y1q3').first().click()
 
     cy.url().should ('include', 'nike-190?page=1')
-      
 })
 
 Cypress.Commands.add('brandalphabeticalfilter', () =>{
